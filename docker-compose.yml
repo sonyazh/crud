@@ -1,0 +1,21 @@
+services:
+  crud.server:
+    image: ${DOCKER_REGISTRY-}crudserver
+    build:
+      context: .
+      dockerfile: Crud.Server/Crud.Server/Dockerfile
+
+  database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql-db
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'Sonya123' # **CHANGE THIS TO A STRONG PASSWORD**
+      MSSQL_PID: 'Express' # Or 'Express', 'Standard', 'Enterprise'
+    volumes:
+      - mssql_data:/var/opt/mssql
+
+volumes:
+  mssql_data:
