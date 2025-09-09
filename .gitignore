@@ -1,0 +1,79 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosf
+*.sln.docstates
+
+# Build artifacts
+bin/
+obj/
+publish/
+dist/
+build/
+*.exe
+*.dll
+*.pdb
+*.tmp
+*.log
+*.cache
+*.bak
+*.ncb
+*.sbr
+*.res
+*.pch
+*.ipch
+*.idb
+*.opt
+*.aps
+*.bsc
+*.lib
+*.exp
+*.ilk
+*.obj
+*.out
+*.tlb
+*.tlh
+*.tmp
+*.manifest
+*.vshost.*
+*.testsettings
+*.trx
+*.webtest
+*.orderedtest
+*.coverage
+*.coveragexml
+*.rptproj
+
+# Node.js modules (if using client-side build tools like npm/yarn)
+node_modules/
+
+# DotNet tools
+.config/dotnet-tools.json
+
+# Rider IDE
+.idea/
+
+# VS Code
+.vscode/
+
+# Package Management
+packages/
+*.nupkg
+project.lock.json
+
+# Blazor specific
+wwwroot/dist/ # If you're using client-side bundling/minification that outputs to wwwroot/dist
+brotli/ # If using Brotli compression for static assets
+
+# Local settings
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+# Or any other local configuration files that should not be committed
+
+# User secrets
+*.usersecrets
+
+# Test results
+TestResults/
